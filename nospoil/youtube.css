@@ -1,0 +1,25 @@
+/* ===== Lecteur ===== */
+html:not(.nospoil-off) .ytp-progress-bar-container,
+html:not(.nospoil-off) .ytp-progress-bar,
+html:not(.nospoil-off) .ytp-time-display,
+html:not(.nospoil-off) .ytp-time-wrapper,
+html:not(.nospoil-off) .ytp-time-duration,
+html:not(.nospoil-off) .ytp-time-current,
+html:not(.nospoil-off) .ytp-chapter-container,
+html:not(.nospoil-off) .ytp-tooltip.ytp-preview,
+html:not(.nospoil-off) ytd-miniplayer .ytp-progress-bar-container,
+
+/* ===== Durée sur les miniatures (ancienne et nouvelle interface) ===== */
+html:not(.nospoil-off) ytd-thumbnail-overlay-time-status-renderer,
+html:not(.nospoil-off) yt-thumbnail-overlay-badge-view-model,
+html:not(.nospoil-off) yt-thumbnail-bottom-overlay-view-model badge-shape,
+html:not(.nospoil-off) .badge-shape-wiz--thumbnail-default,
+html:not(.nospoil-off) .yt-badge-shape--thumbnail-default,
+
+/* ===== Chapitres / moments clés (ex : "Game 1", "Game 2"...) ===== */
+html:not(.nospoil-off) ytd-macro-markers-list-renderer,
+html:not(.nospoil-off) ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-macro-markers-description-chapters"],
+html:not(.nospoil-off) ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-macro-markers-auto-chapters"],
+html:not(.nospoil-off) ytd-horizontal-card-list-renderer:has(ytd-macro-markers-list-item-renderer) {
+  display: none !important;
+}

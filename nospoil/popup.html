@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 14px system-ui, sans-serif; margin: 0; padding: 14px 16px; width: 230px; background: #18181b; color: #efeff1; }
+    h1 { font-size: 15px; margin: 0 0 12px; }
+    label { display: flex; align-items: center; justify-content: space-between; padding: 7px 0; cursor: pointer; }
+    label.main { border-bottom: 1px solid #333; margin-bottom: 4px; font-weight: 600; }
+    input { width: 18px; height: 18px; accent-color: #9147ff; cursor: pointer; }
+    .sub.disabled { opacity: .4; }
+    p { font-size: 12px; color: #adadb8; margin: 10px 0 0; }
+  </style>
+</head>
+<body>
+  <h1>No Spoil Duration</h1>
+  <label class="main">Masquage actif <input type="checkbox" id="enabled"></label>
+  <label class="sub">YouTube <input type="checkbox" id="youtube"></label>
+  <label class="sub">Twitch <input type="checkbox" id="twitch"></label>
+  <p>Raccourci : Alt+Shift+S</p>
+  <script src="popup.js"></script>
+</body>
+</html>

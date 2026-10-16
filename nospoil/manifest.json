@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "No Spoil Duration",
+  "version": "1.0.0",
+  "description": "Cache la barre de progression et la durée des vidéos YouTube et des rediffusions Twitch pour éviter les spoils.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "No Spoil Duration"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-nospoil": {
+      "suggested_key": { "default": "Alt+Shift+S" },
+      "description": "Activer / désactiver le masquage"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.youtube-nocookie.com/*"],
+      "css": ["youtube.css"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "css": ["twitch.css"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

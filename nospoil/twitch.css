@@ -1,0 +1,12 @@
+/* ===== Lecteur de rediffusion ===== */
+html:not(.nospoil-off) [data-a-target="player-seekbar"],
+html:not(.nospoil-off) [data-a-target="player-seekbar-current-time"],
+html:not(.nospoil-off) [data-a-target="player-seekbar-duration"],
+html:not(.nospoil-off) .seekbar-interaction-area,
+html:not(.nospoil-off) .seekbar-bar,
+
+/* ===== Durée sur les cartes de vidéos (onglet Vidéos, rediffs, clips) ===== */
+html:not(.nospoil-off) .tw-media-card-stat,
+html:not(.nospoil-off) [class*="ScMediaCardStatWrapper"] {
+  display: none !important;
+}
